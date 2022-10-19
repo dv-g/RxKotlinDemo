@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigationFragment">
+
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.example.rxkotlindemo.NavigationFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_mainFragment_to_baseClassesFragment"
+            app:destination="@id/baseClassesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_filterOperatorsFragment"
+            app:destination="@id/filterOperatorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_createOperatorsFragment"
+            app:destination="@id/createOperatorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_transformationOperatorsFragment"
+            app:destination="@id/transformationOperatorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_combinationOperatorsFragment"
+            app:destination="@id/combinationOperatorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_helperOperatorsFragment"
+            app:destination="@id/helperOperatorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseClassesFragment"
+        android:name="com.example.rxkotlindemo.BaseClassesFragment"
+        android:label="fragment_base_classes"/>
+    <fragment
+        android:id="@+id/createOperatorsFragment"
+        android:name="com.example.rxkotlindemo.CreateOperatorsFragment"
+        android:label="fragment_create_operators"
+        tools:layout="@layout/fragment_create_operators" />
+    <fragment
+        android:id="@+id/filterOperatorsFragment"
+        android:name="com.example.rxkotlindemo.FilterOperatorsFragment"
+        android:label="fragment_filter_operators"
+        tools:layout="@layout/fragment_filter_operators" />
+    <fragment
+        android:id="@+id/transformationOperatorsFragment"
+        android:name="com.example.rxkotlindemo.TransformationOperatorsFragment"
+        android:label="fragment_transformation_operators"
+        tools:layout="@layout/fragment_transformation_operators" />
+    <fragment
+        android:id="@+id/combinationOperatorsFragment"
+        android:name="com.example.rxkotlindemo.CombinationOperatorsFragment"
+        android:label="fragment_concatenate_operators"
+        tools:layout="@layout/fragment_concatenate_operators" />
+    <fragment
+        android:id="@+id/helperOperatorsFragment"
+        android:name="com.example.rxkotlindemo.HelperOperatorsFragment"
+        android:label="fragment_helper_operators"
+        tools:layout="@layout/fragment_helper_operators" />
+</navigation>
